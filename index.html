@@ -1,0 +1,60 @@
+<html>
+
+<head>
+    <title> Registration</title>
+</head>
+
+<body>
+    <form name="register" method="POST" action="register.php">
+        <table>
+            <tr>
+                <td> Name </td>
+                <td> <input type='text' name='username' id='username' required /> </td>
+            </tr>
+            <tr>
+                <td> Password </td>
+                <td> <input type='password' name='pass' id='pass' required /> </td>
+            </tr>
+            <tr>
+                <td> Email </td>
+                <td> <input type='email' name='mailid' id='mailid' required /> </td>
+            </tr>
+            <tr>
+                <td> Gender </td>
+                <td> <input type="radio" name="gender" value="male"> Male
+                    <input type="radio" name="gender" value="female"> Female
+                    <input type="radio" name="gender" value="other"> Other
+                </td>
+            </tr>
+            <tr>
+                <td> Designation </td>
+                <td>
+                    <select>
+                        <option disabled selected value> -- select an option -- </option>
+                        <option value="japan">Japan</option>
+                        <option value="english">English</option>
+                        <option value="other">Others</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td> Timings </td>
+                <td>
+                    <input type="checkbox" name="timing" value="fulltime"> Full Time
+                    <input type="checkbox" name="timing" value="partime"> Part Time
+                </td>
+            </tr>
+            <tr>
+                <td> Image Upload </td>
+                <td>
+                    <input type="file" id="myImage">
+                </td>
+            </tr>
+            <tr>
+                <td> <input type='submit'> </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
