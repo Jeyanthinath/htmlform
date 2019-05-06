@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC "-//Apache Struts//XWork Validator 1.0.3//EN"
+    "http://struts.apache.org/dtds/xwork-validator-1.0.3.dtd">
+    <validators>
+    <field name="name">
+        <field-validator type="requiredstring"><message>Required Name</message>
+        </field-validator>
+     </field>
+    <field name="gender"> 
+         <field-validator type="requiredstring"><message>Required gender</message>
+         </field-validator>
+      </field>
+     <field name="email">
+	     <field-validator type="requiredstring">
+	     	<message>Required email</message>
+	     </field-validator>
+	     <field-validator type="email">
+	     	<message>Invalid email</message>
+	     </field-validator>
+     </field>
+     <field name="qualification"> 
+         <field-validator type="requiredstring"><message>Required Qualification</message>
+         </field-validator>
+      </field>
+     <field name="dob">
+         <field-validator type="requiredstring">
+         <message>Required DOB</message>
+     </field-validator>
+      <field-validator type="regex">
+    <param name="regex">^(([0-9])|([0-2][0-9])|([3][0-1]))\-(01|02|03|04|05|06|07|08|09|10|11|12)\-\d{4}$</param>
+    <message>InvalidDateFormat</message>
+    </field-validator>
+      
+     </field>
+     <field name="address"> 
+         <field-validator type="requiredstring"><message>Required Address</message>
+         </field-validator>
+      </field>
+      <field name="pincode"> 
+         <field-validator type="requiredstring"><message>Required Pincode</message>
+         </field-validator>
+      </field>
+     <field name="contactno">
+         <field-validator type="requiredstring">             
+           <message>Required contactno</message>
+          </field-validator>
+         <field-validator type="regex">
+           <param name="regex">^[0-9]{10}$</param>
+           <message>invalid mobile no</message>
+     </field-validator>
+     </field>
+     <field name="desigantion"> 
+         <field-validator type="requiredstring"><message>Required Designation</message>
+         </field-validator>
+      </field>
+ </validators>
+     
+     
+     
+     
+     
